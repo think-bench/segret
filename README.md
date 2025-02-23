@@ -56,7 +56,7 @@ python tools/test.py local_configs/SegRet/T/SegRet.T.512x512.ade.160k_res.py /pa
 tools/dist_test.sh local_configs/SegRet/T/SegRet.T.512x512.ade.160k_res.py /path/to/checkpoint_file <GPU_NUM> --aug-test
 
 # Slurm testing
-sbatch tools/slurm_test.sh
+sbatch tools/slurm_test.sh local_configs/SegRet/T/SegRet.T.512x512.ade.160k_res.py /path/to/checkpoint_file
 ```
 
 ## Training
@@ -79,7 +79,7 @@ python tools/train.py local_configs/SegRet/T/SegRet.T.512x512.ade.160k_res.py
 ./tools/dist_train.sh local_configs/SegRet/T/SegRet.T.512x512.ade.160k_res.py <GPU_NUM>
 
 # Slurm training
-sbatch tools/slurm_train.sh
+sbatch tools/slurm_train.sh local_configs/SegRet/T/SegRet.T.512x512.ade.160k_res.py
 ```
 
 ## Visualize
