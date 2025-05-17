@@ -20,8 +20,6 @@ from torchsummary import summary
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
-    # parser.add_argument('--config', default=r'D:\Mr.Li\Desktop\GraduationDesign\SegRet\local_configs\SegRet\S\SegRet.S.512x512.ade.160k.py',
-    #                     help='train config file path')
     parser.add_argument('--config',
                         default='local_configs/SegRet/T/SegRet.T.512x512.ade.160k.py',
                         help='train config file path')

@@ -70,7 +70,6 @@ def parse_args():
     parser.add_argument(
         '--json_logs',
         type=str,
-        default=[r'D:\Mr.Li\Desktop\GraduationDesign\SegRet\work_dirs\S_lr0.00006_20240111_191956.log.json'],
         help='path of train log in json format')
     parser.add_argument(
         '--keys',
